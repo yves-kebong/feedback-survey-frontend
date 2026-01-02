@@ -27,8 +27,8 @@ function Register() {
       localStorage.setItem('user', JSON.stringify(response.data.data.user))
 
       // Success!
-      alert('Registration successful! You are now logged in.')
-      // navigate('/dashboard') // We'll create dashboard later
+      //alert('Registration successful! You are now logged in.')
+       navigate('/dashboard') 
       
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed. Please try again.')

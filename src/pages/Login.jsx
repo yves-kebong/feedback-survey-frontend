@@ -25,9 +25,8 @@ function Login() {
       localStorage.setItem('user', JSON.stringify(response.data.data.user))
 
       // Success! Redirect to dashboard
-      alert('Login successful!')
-      // navigate('/dashboard') // We'll create dashboard later
-      
+      //  alert('Login successful!')
+       navigate('/dashboard') // Navigate to dashboard after login
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed. Please try again.')
     } finally {
