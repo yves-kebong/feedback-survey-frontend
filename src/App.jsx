@@ -3,6 +3,8 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import FormBuilder from './pages/FormBuilder'
+import PublicForm from './pages/PublicForm'
+import ViewResponses from './pages/ViewResponses'
 
 function Home() {
   return (
@@ -64,6 +66,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/form-builder" element={<FormBuilder />} />
+        <Route path="/survey/:uniqueUrl" element={<PublicForm />} />
+        <Route path="/responses/:formId" element={<ViewResponses />} />
       </Routes>
     </BrowserRouter>
   )
